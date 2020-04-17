@@ -1,0 +1,43 @@
+// Text Colors
+// -------------------------
+
+$text-colors: (
+  white: (
+    base: $fill-white
+  ),
+  black: (
+    base: $fill-black
+  ),
+  blue: (
+    base: $fill-blue
+  ),
+  dark: (
+    base: $fill-dark
+  )
+);
+
+.text {
+  @include modifiers($text-colors, "color", "-", "-", "base");
+}
+
+// Fill Colors
+// --------------------------
+
+$fill-colors: (
+  white: (
+    base: $fill-white,
+  ),
+  black: (
+    base: $fill-black
+  ),
+  blue: (
+    base: $fill-blue
+  ),
+  dark: (
+    base: $fill-dark
+  )
+);
+
+.fill {
+  @include modifiers($fill-colors, "background-color", "-", "-", "base");
+}

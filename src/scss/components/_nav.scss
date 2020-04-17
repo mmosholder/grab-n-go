@@ -1,0 +1,45 @@
+.nav {
+  &-container {
+    width: 100%;
+    padding: pxem(10) pxem(25);
+
+    @include mq($from: $breakpoint-small) {
+      padding: pxem(20) pxem(50) pxem(40) pxem(50);
+    }
+  }
+
+  .logo {
+
+    img {
+      width: 200px;
+
+      @include mq($from: $breakpoint-small) {
+        width: 400px;
+      }
+    }
+  }
+
+  .open-logo {
+    text-decoration: none;
+
+    img {
+      width: 80px;
+    }
+  }
+}
+
+.top-banner {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: rgba(#018793, 0.7);
+  transition: background-color 240ms $t-1;
+
+  &:hover {
+    background-color: lighten(#018793, 5%);
+    transition: background-color 240ms $t-1;
+  }
+}

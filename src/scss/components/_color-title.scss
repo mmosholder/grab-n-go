@@ -1,0 +1,43 @@
+.color-title {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height:pxem(60);
+    background-color: $fill-blue;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+
+    @include mq($from: $breakpoint-small) {
+      top: 28%;
+      height: pxem(57);
+      width: pxem(710);
+    }
+
+    @include mq($from: $breakpoint-xlarge) {
+      top: 29%;
+      height: pxem(69);
+      width: 66%;
+    }
+  }
+
+  .title-1 {
+    text-align: center;
+
+    @include mq($from: $breakpoint-small) {
+      text-align: unset;
+    }
+  }
+
+  &-right {
+    &:before {
+      right: 0;
+      left: unset;
+    }
+  }
+
+}

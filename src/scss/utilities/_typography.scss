@@ -1,0 +1,164 @@
+// Typography base text & title classes
+// ------------------------------------
+
+.title {
+
+  &-1 {
+    @include kelly;
+    @include font-smoothing;
+    line-height: 1.216;
+    font-size: 40px;
+
+    @include mq($from: $breakpoint-small) {
+      font-size: 70px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &-2 {
+    @include kelly;
+    @include font-smoothing;
+    line-height: 1.216;
+    font-size: 26px;
+
+    @include mq($from: $breakpoint-small) {
+      font-size: 40px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &-3 {
+    @include kelly;
+    @include font-smoothing;
+    line-height: 1.216;
+    font-size: 18px;
+
+    @include mq($from: $breakpoint-small) {
+      font-size: 30px;
+      letter-spacing: 0.4px;
+    }
+  }
+}
+
+.text {
+
+  &-20 {
+    @include roboto;
+    @include font-smoothing;
+    $map: (
+      576px: 16px,
+      992px: 20px
+    );
+    line-height: 1.25;
+    @include poly-fluid-sizing("font-size", $map);
+  }
+
+//   &-16-bold {
+//     @include cabin-bold;
+//     @include font-smoothing;
+//     font-size: 16px;
+//     line-height: 1.23;
+//   }
+
+  &-16 {
+    @include roboto;
+    @include font-smoothing;
+    font-size: 16px;
+    line-height: 1.23;
+  }
+
+//   &-30 {
+//     @include cabin-bold;
+//     @include font-smoothing;
+//     $map: (
+//       576px: 22px,
+//       992px: 30px
+//     );
+//     line-height: 1.23;
+//     @include poly-fluid-sizing("font-size", $map);
+//   }
+}
+
+.link {
+  &-underline {
+    @include pretty-text-underline($fill-blue, 2);
+  }
+}
+
+// Typography Emphasis and Styling
+// -------------------------
+
+.italic {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.decoration-underline {
+  text-decoration: underline;
+}
+
+.decoration-line-through {
+  text-decoration: line-through;
+}
+
+// Typography Alignment
+// -------------------------
+
+.text-center {
+  text-align: center;
+}
+
+// Text center
+@include generate-breakpoint-prefixes {
+
+  &text-center {
+    text-align: center;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+//text left
+@include generate-breakpoint-prefixes {
+
+  &text-left {
+    text-align: left;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+// List styles
+// -------------------------
+// Unstyled keeps list items block level,
+// just removes default browser padding and list-style
+
+.list-unstyled {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-flex {
+  display: flex;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
