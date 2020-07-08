@@ -1,33 +1,7 @@
 // Custom
-// @import "helpers/all";
-// @import "base/all";
-// @import "utilities/all";
-// @import "components/all";
+@import "helpers/all";
+@import "base/all";
+@import "utilities/all";
+@import "components/all";
 
-._pendo-ext-container_ {
-  background: #162737;
-  border-top: 1px solid #f4f4f7;
-}
-._pendo-ext-search_ {
-  padding-top: 7px;
-  border-bottom: none;
-}
-
-._pendo-ext-article_ ._pendo-ext-article-header_ {
-  background-color: #162737;
-  color: #fff;
-}
-
-._pendo-ext-results-list_ ._pendo-ext-results-list-item_ {
-  font-weight: 600;
-}
-
-._pendo-ext-article-content_ ._pendo-ext-article-content-main_ {
-  background-color: #162737;
-  color: #fff;
-}
-
-._pendo-ext-article-content_ ._pendo-ext-article-content-main_ ._pendo-ext-read-more-wrapper_ ._pendo-ext-read-more-button_ {
-  background-color: #2cbfff;
-}
 
