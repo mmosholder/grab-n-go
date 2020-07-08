@@ -17,7 +17,5 @@ mix
     proxy: 'gng.test'
   })
   .options({
-    processCssUrls: false,
-    postCss: [require("cssnano")()]
-  });
+    processCssUrls: false  });
 
